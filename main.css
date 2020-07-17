@@ -12,9 +12,9 @@ header h1, header p {
 }
 
 .delete-button, .edit-button {
-  position: absolute;
   right: 0;
   margin: 5px 5px;
+  display: inline-block; 
 }
 
 .delete-button{
