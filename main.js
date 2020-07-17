@@ -1,6 +1,13 @@
 const calories_url  = "http://localhost:3000/api/v1/calorie_entries"
 const qs = (item) => document.querySelector(item);
 const ce = (item) => document.createElement(item);
+const modal = qs("#edit-form-container");
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 
 const reqObj = (method, body) => {
     return {
